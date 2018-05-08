@@ -29,7 +29,7 @@ describe(_model + ' CRUD routes tests', function () {
                     return done(err);
                 }
                 var resp = res.body;
-                assert.equal(resp.status, 400);
+                assert.equal(resp.status, 200);
                 assert.equal(resp.data.length, 0);
                 done();
             });
